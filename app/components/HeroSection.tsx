@@ -6,7 +6,7 @@ import { useId, useState } from "react";
 import arrowIcon from "../assets/icons/icon-arrow.svg";
 import { homeHeroSlides } from "../data";
 
-export function HeroSection() {
+export default function HeroSection() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const carouselId = useId();
   const activeSlide = homeHeroSlides[activeSlideIndex];

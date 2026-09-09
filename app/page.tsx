@@ -1,6 +1,6 @@
-import { Header } from "@/app/components/Header";
-import { HeroSection } from "@/app/components/HeroSection";
-import { WelcomeSection } from "@/app/components/WelcomeSection";
+import HeroSection  from "@/app/components/HeroSection";
+import WelcomeSection from "@/app/components/WelcomeSection";
+import SmallTeamSection from "@/app/components/SmallTeamSection";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
     <main>
         <HeroSection />
         <WelcomeSection />
+        <SmallTeamSection />
       </main>
     </>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { welcome } from "@/app/data";
 
-export function WelcomeSection() {
+export default function WelcomeSection() {
   return (
     <section
       aria-labelledby="welcome-heading"

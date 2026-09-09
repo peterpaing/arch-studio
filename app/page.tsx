@@ -1,6 +1,7 @@
 import HeroSection  from "@/app/components/HeroSection";
 import WelcomeSection from "@/app/components/WelcomeSection";
 import SmallTeamSection from "@/app/components/SmallTeamSection";
+import FeaturedSection from "@/app/components/FeaturedSection";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
         <HeroSection />
         <WelcomeSection />
         <SmallTeamSection />
-      </main>
+        <FeaturedSection />
+    </main>
     </>
   );
 }

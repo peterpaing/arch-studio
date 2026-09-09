@@ -14,7 +14,7 @@ export function Header() {
         className="absolute left-8 top-0 hidden h-30 w-px bg-border md:block "
       />
 
-      <div className="flex h-24 items-center px-8 md:h-30 md:px-[4.5rem] lg:pl-[10.3125rem]">
+      <div className="flex h-24 items-center px-8 md:h-30 md:px-[4.5rem] lg:px-[7rem]">
         <Link
           href="/"
           aria-label="Arch Studio home"

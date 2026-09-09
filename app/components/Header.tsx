@@ -1,20 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import { navigation } from "../data";
-import closeIcon from "../assets/icons/icon-close.svg";
-import menuIcon from "../assets/icons/icon-hamburger.svg";
-import logo from "../assets/logo.svg";
+import { navigation } from "@/app/data";
 import { NavLink } from "@/app/components/NavLink";
+import closeIcon from "@/app/assets/icons/icon-close.svg";
+import menuIcon from "@/app/assets/icons/icon-hamburger.svg";
+import logo from "@/app/assets/logo.svg";
 
 export default function Header() {
   return (
     <header className="relative z-50 bg-background">
       <span
         aria-hidden="true"
-        className="absolute left-8 top-0 hidden h-30 w-px bg-border md:block "
+        className="absolute left-8 top-0 hidden h-30 w-px bg-border md:block"
       />
 
-      <div className="flex h-24 items-center px-8 md:h-30 md:px-[4.5rem] lg:px-[7rem]">
+      <div className="flex h-24 items-center px-8 md:h-30 md:px-[4.5rem] lg:mx-auto lg:w-5/6 lg:max-w-[1110px] lg:px-0">
         <Link
           href="/"
           aria-label="Arch Studio home"
@@ -32,9 +32,9 @@ export default function Header() {
 
         <nav
           aria-label="Primary navigation"
-          className="ml-[4.5rem] hidden md:block lg:ml-24"
+          className="ml-[4.5rem] hidden md:block lg:ml-20"
         >
-          <ul className="flex items-center gap-12 lg:gap-16">
+          <ul className="flex items-center gap-12 lg:gap-14">
             {navigation.map((item) => (
               <li key={item.href}>
                 <NavLink href={item.href}>{item.label}</NavLink>
@@ -55,6 +55,7 @@ export default function Header() {
               alt=""
               width={24}
               height={16}
+              aria-hidden="true"
               className="group-open:hidden"
             />
 
@@ -63,13 +64,14 @@ export default function Header() {
               alt=""
               width={20}
               height={20}
+              aria-hidden="true"
               className="hidden group-open:block"
             />
           </summary>
 
           <nav
             aria-label="Mobile navigation"
-            className="absolute inset-x-0 top-full bg-[#eeeff4] px-20 py-10"
+            className="absolute inset-x-0 top-full bg-surface px-20 py-10"
           >
             <ul className="space-y-6">
               {navigation.map((item) => (

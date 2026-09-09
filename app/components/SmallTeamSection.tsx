@@ -9,7 +9,7 @@ export default function SmallTeamSection() {
   return (
     <section
       aria-labelledby="small-team-heading"
-      className="relative max-w-[1110px] md:mx-auto md:w-5/6"
+      className="relative max-w-[1110px] md:mx-auto md:w-5/6 lg:w-full"
     >
       <div className="relative h-[27rem] lg:h-[30rem]">
         <picture>

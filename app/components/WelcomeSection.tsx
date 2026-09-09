@@ -11,14 +11,14 @@ export function WelcomeSection() {
         {/* Background Text */}
         <p
           aria-hidden="true"
-          className="pointer-events-none absolute hidden z-10 select-none whitespace-nowrap font-bold leading-none tracking-[-0.06em] text-surface md:block md:left-30 md:top-[5rem] md:text-[6rem] lg:top-[6rem] lg:text-[11rem]"
+          className="pointer-events-none absolute hidden z-10 select-none whitespace-nowrap font-bold leading-none tracking-[-0.06em] text-surface md:block md:left-30 md:top-[5rem] md:text-[7rem] lg:top-[6rem] lg:left-0 lg:text-[15rem]"
         >
           Welcome
         </p>
 
-        <div className="relative lg:mt-25 lg:flex lg:items-center lg:justify-center lg:gap-20">
+        <div className="relative lg:mt-25 lg:flex lg:items-center lg:justify-center lg:gap-30">
           {/* Text Content */}
-          <div className="md:ml-[6rem] md:pt-16 lg:ml-0 lg:max-w-[25.5rem] lg:pt-8 ">
+          <div className="md:ml-[6rem] md:pt-16 lg:ml-0 lg:max-w-[25.5rem] lg:pt-20">
             <h2
               id="welcome-heading"
               className="max-w-[20rem] text-5xl font-bold leading-[0.9] tracking-[-0.03em] text-primary md:text-6xl lg:max-w-[60rem] lg:text-7xl"

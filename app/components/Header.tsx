@@ -6,7 +6,7 @@ import menuIcon from "../assets/icons/icon-hamburger.svg";
 import logo from "../assets/logo.svg";
 import { NavLink } from "@/app/components/NavLink";
 
-export function Header() {
+export default function Header() {
   return (
     <header className="relative z-50 bg-background">
       <span

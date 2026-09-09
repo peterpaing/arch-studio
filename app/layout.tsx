@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/app/components/Header";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 const barlow = Barlow({
   variable: "--font-barlow",
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col">
       <Header />
       {children}
+      <Footer />
     </body>
     </html>
   );

@@ -36,15 +36,16 @@ export default function HeroSection() {
             fill
             priority={activeSlideIndex === 0}
             sizes="(min-width: 1024px) calc(100vw - 25.625rem), (min-width: 768px) 573px, 100vw"
-            className="object-cover"
+            className="hero-image-enter object-cover"
           />
         </picture>
 
         <div aria-hidden="true" className="absolute inset-0 bg-primary/35" />
 
         <div
+          key={activeSlide.title}
           id={carouselId}
-          className="absolute left-8 top-44 max-w-[19rem] text-white md:left-12 md:top-25 md:max-w-[22rem] lg:left-45 lg:top-20 lg:max-w-[26rem]"
+          className="hero-content-enter absolute left-8 top-44 max-w-[19rem] text-white md:left-12 md:top-25 md:max-w-[22rem] lg:left-45 lg:top-20 lg:max-w-[26rem]"
         >
           <p className="sr-only" aria-live="polite">
             Slide {activeSlideIndex + 1} of {homeHeroSlides.length}:{" "}
@@ -61,7 +62,7 @@ export default function HeroSection() {
 
           <Link
             href="/portfolio"
-            className="mt-8 inline-flex min-h-[4.5rem] items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            className="group mt-8 inline-flex min-h-[4.5rem] items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >
             See Our Portfolio
 
@@ -71,6 +72,7 @@ export default function HeroSection() {
               width={24}
               height={18}
               aria-hidden="true"
+              className="transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none"
             />
           </Link>
         </div>

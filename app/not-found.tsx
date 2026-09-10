@@ -18,12 +18,12 @@ export default function NotFound() {
         <div className="relative w-full lg:grid lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-20">
           <div
             aria-hidden="true"
-            className="pointer-events-none select-none text-[9rem] font-bold leading-[0.8] tracking-[-0.06em] text-surface md:text-[14rem] lg:text-[18rem]"
+            className="not-found-number-enter pointer-events-none select-none text-[9rem] font-bold leading-[0.8] tracking-[-0.06em] text-surface md:text-[14rem] lg:text-[18rem]"
           >
             404
           </div>
 
-          <div className="relative -mt-4 max-w-[32rem] md:-mt-10 lg:mt-0">
+          <div className="not-found-content-enter relative -mt-4 max-w-[32rem] md:-mt-10 lg:mt-0">
             <span
               aria-hidden="true"
               className="mb-10 block h-px w-16 bg-border"
@@ -44,12 +44,13 @@ export default function NotFound() {
 
             <Link
               href="/"
-              className="mt-8 inline-flex min-h-[4.5rem] items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              className="group mt-8 inline-flex min-h-[4.5rem] items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors duration-300 hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transition-none"
             >
               Back to Home
+
               <FiArrowRight
                 aria-hidden="true"
-                className="shrink-0 text-2xl"
+                className="shrink-0 text-2xl transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none"
               />
             </Link>
           </div>

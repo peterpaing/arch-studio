@@ -15,17 +15,28 @@ export function NavLink({ href, children, mobile = false }: NavLinkProps) {
   const isCurrent = pathname === href;
 
   const sharedClasses =
-    "rounded-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary";
+    "rounded-sm transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transition-none";
 
-  const desktopClasses = isCurrent
-    ? "text-primary"
-    : "text-muted hover:text-primary";
+  const desktopClasses = `
+    relative
+    after:absolute
+    after:-bottom-2
+    after:left-0
+    after:h-[2px]
+    after:bg-primary
+    after:transition-all
+    after:duration-300
+    motion-reduce:after:transition-none
+    ${
+      isCurrent
+        ? "text-primary after:w-full"
+        : "text-muted after:w-0 hover:text-primary hover:after:w-full"
+    }
+  `;
 
   const mobileClasses = isCurrent
     ? "text-primary"
     : "text-primary hover:text-muted";
-
-    
 
   return (
     <Link
@@ -33,8 +44,8 @@ export function NavLink({ href, children, mobile = false }: NavLinkProps) {
       aria-current={isCurrent ? "page" : undefined}
       className={
         mobile
-            ? `${sharedClasses} block text-[1.5rem] font-bold leading-8 ${mobileClasses}`
-            : `${sharedClasses} text-[0.9375rem] font-bold leading-6 ${desktopClasses}`
+          ? `${sharedClasses} block text-[1.5rem] font-bold leading-8 ${mobileClasses}`
+          : `${sharedClasses} text-[0.9375rem] font-bold leading-6 ${desktopClasses}`
       }
     >
       {children}

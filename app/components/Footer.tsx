@@ -12,7 +12,7 @@ export default function Footer() {
           <Link
             href="/"
             aria-label="Arch home"
-            className="absolute -top-16 grid size-32 place-items-center bg-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:static md:size-[7.5rem] md:shrink-0 lg:size-[10rem]"
+            className="group absolute -top-16 grid size-32 place-items-center bg-primary transition-colors duration-300 hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transition-none md:static md:size-[7.5rem] md:shrink-0 lg:size-[10rem]"
           >
             <Image
               src={logo}
@@ -20,7 +20,7 @@ export default function Footer() {
               width={96}
               height={40}
               aria-hidden="true"
-              className="w-16 brightness-0 invert lg:w-24"
+              className="w-16 brightness-0 invert transition-transform duration-300 group-hover:scale-105 group-focus-visible:scale-105 motion-reduce:transform-none motion-reduce:transition-none lg:w-24"
             />
           </Link>
 
@@ -43,10 +43,14 @@ export default function Footer() {
 
         <Link
           href="/portfolio"
-          className="mx-auto mt-8 flex min-h-[4.5rem] w-fit items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:absolute md:right-0 md:top-1/2 md:mt-0 md:-translate-y-1/2"
+          className="group mx-auto mt-8 flex min-h-[4.5rem] w-fit items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors duration-300 hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transition-none md:absolute md:right-0 md:top-1/2 md:mt-0 md:-translate-y-1/2"
         >
           See Our Portfolio
-          <FiArrowRight aria-hidden="true" className="shrink-0 text-2xl" />
+
+          <FiArrowRight
+            aria-hidden="true"
+            className="shrink-0 text-2xl transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none"
+          />
         </Link>
       </div>
     </footer>

@@ -139,18 +139,23 @@ export default function AboutPage() {
         <ul className="mt-12 grid gap-x-8 gap-y-16 md:grid-cols-2 md:gap-y-12 lg:mt-0 lg:gap-y-16">
           {leaders.map((leader) => (
             <li key={leader.name}>
-              <figure>
+              <figure className="group">
                 <div className="relative aspect-square w-full overflow-hidden">
                   <Image
                     src={leader.avatar}
                     alt=""
                     fill
                     sizes="(min-width: 1024px) 250px, (min-width: 768px) 40vw, calc(100vw - 4rem)"
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04] motion-reduce:transition-none"
+                  />
+
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-0 bg-primary/0 transition-colors duration-500 group-hover:bg-primary/15 motion-reduce:transition-none"
                   />
                 </div>
 
-                <figcaption className="mt-4">
+                <figcaption className="mt-4 transition-transform duration-300 ease-out group-hover:-translate-y-1 motion-reduce:transform-none motion-reduce:transition-none">
                   <h3 className="text-lg font-bold leading-6 text-primary">
                     {leader.name}
                   </h3>

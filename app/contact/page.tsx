@@ -103,7 +103,7 @@ export default function ContactPage() {
                   Mail:{" "}
                   <a
                     href={`mailto:${office.email}`}
-                    className="transition-colors hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+                    className="transition-colors duration-300 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transition-none"
                   >
                     {office.email}
                   </a>
@@ -115,7 +115,7 @@ export default function ContactPage() {
                   Phone:{" "}
                   <a
                     href={`tel:${office.phone}`}
-                    className="transition-colors hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+                    className="transition-colors duration-300 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transition-none"
                   >
                     {office.phone}
                   </a>
@@ -124,10 +124,13 @@ export default function ContactPage() {
 
               <a
                 href="#contact-map"
-                className="mt-6 inline-flex items-center gap-6 text-sm font-bold text-primary transition-colors hover:text-muted focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+                className="group mt-6 inline-flex items-center gap-6 text-sm font-bold text-primary transition-colors duration-300 hover:text-muted focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transition-none"
               >
                 View on Map
-                <FiArrowRight aria-hidden="true" className="text-xl" />
+                <FiArrowRight
+                  aria-hidden="true"
+                  className="text-xl transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none"
+                />
               </a>
             </li>
           ))}
@@ -185,7 +188,7 @@ export default function ContactPage() {
               autoComplete="name"
               required
               placeholder="Name"
-              className="w-full border-b border-border bg-transparent px-4 py-5 font-medium text-primary outline-none placeholder:text-border focus:border-primary"
+              className="w-full border-b border-border bg-transparent px-4 py-5 font-medium text-primary outline-none transition-colors duration-300 placeholder:text-border focus:border-primary motion-reduce:transition-none"
             />
           </div>
 
@@ -201,7 +204,7 @@ export default function ContactPage() {
               autoComplete="email"
               required
               placeholder="Email"
-              className="w-full border-b border-border bg-transparent px-4 py-5 font-medium text-primary outline-none placeholder:text-border focus:border-primary"
+              className="w-full border-b border-border bg-transparent px-4 py-5 font-medium text-primary outline-none transition-colors duration-300 placeholder:text-border focus:border-primary motion-reduce:transition-none"
             />
           </div>
 
@@ -216,7 +219,7 @@ export default function ContactPage() {
               required
               rows={4}
               placeholder="Message"
-              className="w-full resize-none border-b border-border bg-transparent px-4 py-5 font-medium text-primary outline-none placeholder:text-border focus:border-primary"
+              className="w-full resize-none border-b border-border bg-transparent px-4 py-5 font-medium text-primary outline-none transition-colors duration-300 placeholder:text-border focus:border-primary motion-reduce:transition-none"
             />
           </div>
 
@@ -224,9 +227,12 @@ export default function ContactPage() {
             <button
               type="submit"
               aria-label="Send message"
-              className="grid size-20 place-items-center bg-primary text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              className="group grid size-20 place-items-center bg-primary text-white transition-all duration-300 hover:bg-[#3d414b] active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary motion-reduce:transform-none motion-reduce:transition-none"
             >
-              <FiArrowRight aria-hidden="true" className="text-2xl" />
+              <FiArrowRight
+                aria-hidden="true"
+                className="text-2xl transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none"
+              />
             </button>
           </div>
         </form>

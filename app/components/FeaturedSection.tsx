@@ -45,12 +45,12 @@ export default function FeaturedSection() {
 
         <Link
           href="/portfolio"
-          className="hidden min-h-[4.5rem] items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:inline-flex"
+          className="group hidden min-h-[4.5rem] items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:inline-flex"
         >
           See All
           <FiArrowRight
             aria-hidden="true"
-            className="shrink-0 text-2xl"
+            className="shrink-0 text-2xl transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none"
           />
         </Link>
       </div>
@@ -74,26 +74,27 @@ export default function FeaturedSection() {
                   alt=""
                   fill
                   sizes="(min-width: 1024px) 350px, (min-width: 768px) 83vw, calc(100vw - 3rem)"
-                  className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04] group-focus-visible:scale-[1.04] motion-reduce:transition-none"
                 />
               </picture>
 
               <div
                 aria-hidden="true"
-                className="absolute inset-0 bg-primary/25"
+                className="absolute inset-0 bg-primary/25 transition-colors duration-500 group-hover:bg-primary/40 group-focus-visible:bg-primary/40 motion-reduce:transition-none"
               />
 
               <span
                 aria-hidden="true"
-                className="absolute right-4 top-3 text-[9rem] font-bold leading-none text-white/50 md:right-6 md:text-[12rem] lg:-right-2 lg:top-8"
+                className="absolute right-4 top-3 text-[9rem] font-bold leading-none text-white/50 transition-all duration-500 group-hover:-translate-y-2 group-hover:text-white/65 group-focus-visible:-translate-y-2 group-focus-visible:text-white/65 motion-reduce:transform-none motion-reduce:transition-none md:right-6 md:text-[12rem] lg:-right-2 lg:top-8"
               >
                 {project.number}
               </span>
 
-              <div className="absolute bottom-6 left-6 text-white md:left-10 lg:bottom-10">
+              <div className="absolute bottom-6 left-6 text-white transition-transform duration-300 group-hover:-translate-y-1 group-focus-visible:-translate-y-1 motion-reduce:transform-none motion-reduce:transition-none md:left-10 lg:bottom-10">
                 <h3 className="text-lg font-bold md:text-xl">
                   {project.title}
                 </h3>
+
                 <p className="text-[0.8125rem] font-medium">
                   View All Projects
                 </p>
@@ -105,12 +106,12 @@ export default function FeaturedSection() {
 
       <Link
         href="/portfolio"
-        className="mt-6 flex min-h-[4.5rem] w-full items-center justify-center gap-6 bg-primary text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:hidden"
+        className="group mt-6 flex min-h-[4.5rem] w-full items-center justify-center gap-6 bg-primary text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:hidden"
       >
         See All
         <FiArrowRight
           aria-hidden="true"
-          className="shrink-0 text-2xl"
+          className="shrink-0 text-2xl transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1 motion-reduce:transition-none"
         />
       </Link>
     </section>

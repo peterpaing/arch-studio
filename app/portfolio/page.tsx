@@ -20,7 +20,7 @@ export default function PortfolioPage() {
         <ul className="grid gap-6 lg:grid-cols-3 lg:gap-[1.875rem]">
           {projects.map((project) => (
             <li key={project.slug}>
-              <article className="relative h-60 overflow-hidden lg:aspect-[350/560] lg:h-auto">
+              <article className="group relative h-60 overflow-hidden lg:aspect-[350/560] lg:h-auto">
                 <picture>
                   <source
                     media="(min-width: 1024px)"
@@ -37,16 +37,16 @@ export default function PortfolioPage() {
                     alt=""
                     fill
                     sizes="(min-width: 1024px) 28vw, (min-width: 768px) 83vw, calc(100vw - 3rem)"
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04] motion-reduce:transition-none"
                   />
                 </picture>
 
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-t from-primary/65 via-transparent to-transparent"
+                  className="absolute inset-0 bg-gradient-to-t from-primary/65 via-transparent to-transparent transition-opacity duration-500 group-hover:opacity-85 motion-reduce:transition-none"
                 />
 
-                <div className="absolute bottom-6 left-6 text-white md:left-10 lg:bottom-10">
+                <div className="absolute bottom-6 left-6 text-white transition-transform duration-300 ease-out group-hover:-translate-y-1 motion-reduce:transform-none motion-reduce:transition-none md:left-10 lg:bottom-10">
                   <h2 className="text-lg font-bold leading-6">
                     {project.title}
                   </h2>

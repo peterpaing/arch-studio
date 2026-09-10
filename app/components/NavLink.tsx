@@ -42,6 +42,13 @@ export function NavLink({ href, children, mobile = false }: NavLinkProps) {
     <Link
       href={href}
       aria-current={isCurrent ? "page" : undefined}
+      onClick={
+        mobile
+          ? (event) => {
+              event.currentTarget.closest("details")?.removeAttribute("open");
+            }
+          : undefined
+      }
       className={
         mobile
           ? `${sharedClasses} block text-[1.5rem] font-bold leading-8 ${mobileClasses}`

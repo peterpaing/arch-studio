@@ -14,7 +14,7 @@ export default function Header() {
         className="absolute left-8 top-0 hidden h-30 w-px bg-border md:block"
       />
 
-      <div className="flex h-24 items-center px-8 md:h-30 md:px-[4.5rem] lg:mx-auto lg:w-5/6 lg:max-w-[1110px] lg:px-0">
+      <div className="flex h-24 items-center px-8 md:h-30 md:px-[4.5rem] lg:mx-auto lg:h-36 lg:w-5/6 lg:max-w-[1110px] lg:px-0">
         <Link
           href="/"
           aria-label="Arch Studio home"

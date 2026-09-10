@@ -21,7 +21,7 @@ export default function AboutPage() {
         aria-labelledby="about-intro-heading"
         className="relative mx-auto max-w-[1110px] md:w-5/6"
       >
-        <div className="relative h-60 md:h-[45rem] lg:h-[45rem] lg:w-[57%]">
+        <div className="relative h-60 md:h-[34rem] lg:h-[36rem] lg:w-[57%]">
           <picture>
             <source media="(min-width: 1024px)" srcSet={heroDesktop.src} />
             <source media="(min-width: 768px)" srcSet={heroTablet.src} />
@@ -42,17 +42,17 @@ export default function AboutPage() {
           />
         </div>
 
-        <div className="relative -mt-12 mr-8 bg-background px-8 pb-2 pt-16 md:absolute md:bottom-0 md:right-0 md:mr-0 md:w-[82%] md:px-16 md:pb-0 md:pt-32 lg:w-[57%] lg:px-24 lg:pt-44">
+        <div className="relative -mt-12 mr-8 bg-background px-8 pb-2 pt-16 md:absolute md:bottom-0 md:right-0 md:mr-0 md:w-[82%] md:px-16 md:pb-0 md:pt-16 lg:w-[54%] lg:px-20 lg:pt-20">
           <span
             aria-hidden="true"
-            className="absolute right-0 top-0 hidden -translate-y-[42%] whitespace-nowrap text-[7rem] font-bold leading-none tracking-[-0.06em] text-surface md:block lg:text-[13rem]"
+            className="absolute right-0 top-0 hidden -translate-y-[42%] whitespace-nowrap text-[7rem] font-bold leading-none tracking-[-0.06em] text-surface md:block lg:right-10 lg:text-[13rem]"
           >
             About
           </span>
 
           <span
             aria-hidden="true"
-            className="mb-10 block h-px w-16 bg-border md:mb-10 lg:mb-12"
+            className="mb-8 block h-px w-16 bg-border lg:mb-10"
           />
 
           <h2
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
       <section
         aria-labelledby="heritage-heading"
-        className="mx-auto mt-24 grid max-w-[1110px] gap-16 px-8 md:mt-32 md:w-5/6 md:px-0 lg:mt-48 lg:grid-cols-2 lg:items-end lg:gap-32"
+        className="mx-auto mt-24 grid max-w-[1110px] gap-16 px-8 md:mt-24 md:w-5/6 md:px-0 lg:mt30 lg:grid-cols-2 lg:items-end lg:gap-32"
       >
         <div className="max-w-[28rem]">
           <span
@@ -93,9 +93,9 @@ export default function AboutPage() {
           <div className="mt-8 space-y-6 text-base font-medium leading-6 text-muted">
             <p>
               Founded in 2007, we started as a trio of architects. Our
-              complimentary skillsets and relentless attention to detail
-              turned Arch into one of the most sought after boutique firms in
-              the country.
+              complimentary skillsets and relentless attention to detail turned
+              Arch into one of the most sought after boutique firms in the
+              country.
             </p>
 
             <p>

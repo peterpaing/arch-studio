@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useId, useState } from "react";
-import arrowIcon from "../assets/icons/icon-arrow.svg";
+import { FiArrowRight } from "react-icons/fi";
 import { homeHeroSlides } from "../data";
 
 export default function HeroSection() {
@@ -61,20 +61,16 @@ export default function HeroSection() {
           </p>
 
           <Link
-            href="/portfolio"
-            className="group mt-8 inline-flex min-h-[4.5rem] items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-          >
-            See Our Portfolio
+          href="/portfolio"
+          className="group mt-8 inline-flex min-h-[4.5rem] items-center gap-6 bg-primary px-8 text-[0.9375rem] font-bold text-white transition-colors hover:bg-[#3d414b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+        >
+          See Our Portfolio
 
-            <Image
-              src={arrowIcon}
-              alt=""
-              width={24}
-              height={18}
-              aria-hidden="true"
-              className="transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none"
-            />
-          </Link>
+          <FiArrowRight
+            aria-hidden="true"
+            className="shrink-0 text-2xl text-white transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none"
+          />
+        </Link>
         </div>
 
         <ol

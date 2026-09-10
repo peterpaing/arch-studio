@@ -2,6 +2,10 @@
 
 A responsive multi-page architecture studio website built from the provided Figma design.
 
+## Preview
+
+![Arch Studio preview](./public/arch-studio-preivew.png)
+
 ## Pages
 
 - Home

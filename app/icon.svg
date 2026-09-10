@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#1B1D23"></rect>
+
+  <!-- Architectural A frame -->
+  <path fill="#FFFFFF" d="M10 50 27.6 11h8.8L54 50h-9.4l-3.8-9H23.2l-3.8 9H10Zm16.7-17h10.6L32 20.4 26.7 33Z"></path>
+
+  <!-- Building entrance -->
+  <path fill="#1B1D23" d="M28 45h8v-8h-8v8Z"></path>
+
+  <!-- Blueprint accent -->
+  <path fill="#C8CDD8" d="M14 53h36v2H14z"></path>
+</svg>

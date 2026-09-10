@@ -52,8 +52,13 @@ export const metadata: Metadata = {
       "Thoughtful architecture that creates spaces designed to inspire and endure.",
   },
   icons: {
-    icon: "/favicon.ico",
-  },
+  icon: [
+    {
+      url: "/icon.svg",
+      type: "image/svg+xml",
+    },
+  ],
+},
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
